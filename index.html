@@ -2,39 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="ol/ol.css" type="text/css">
-    <style>
-        .map {
-            height: 100%;
-            width: 100%;
-            position: fixed;
-        }
-        body {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/map.css" type="text/css">
     <script src="ol/ol.js" type="text/javascript"></script>
     <title>Electron OpenLayers</title>
 </head>
 <body>
 <div id="map" class="map"></div>
-<script type="text/javascript">
-    var basemap = new ol.source.OSM({
-        "url": "http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
-    });
-
-    var map = new ol.Map({
-        target: 'map',
-        layers: [
-            new ol.layer.Tile({
-                source: basemap
-            })
-        ],
-        view: new ol.View({
-            center: ol.proj.fromLonLat([-119, 35]),
-            zoom: 6,
-            minZoom: 2
-        })
-    });
-</script>
+<script src="js/map.js" type="text/javascript"></script>
 </body>
 </html>
