@@ -1,9 +1,7 @@
-var basemap = new ol.source.OSM({
-    "url": "http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
-});
-
-var basemap_layer = new ol.layer.Tile({
-    source: basemap
+var carto_dark_all = new ol.layer.Tile({
+    source: new ol.source.OSM({
+        url: "http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+    })
 });
 
 var view = new ol.View({
@@ -13,7 +11,7 @@ var view = new ol.View({
 });
 
 var layers = [
-    basemap_layer
+    carto_dark_all
 ];
 
 var map = new ol.Map({
