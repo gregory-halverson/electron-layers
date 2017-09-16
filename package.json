@@ -1,0 +1,20 @@
+{
+  "name": "electron-layers",
+  "version": "0.1.0",
+  "description": "OpenLayers running in Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/gregory-halverson/electron-layers",
+  "keywords": [
+    "Electron",
+    "OpenLayers",
+    "GIS"
+  ],
+  "author": "Gregory Halverson",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
